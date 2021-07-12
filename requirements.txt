@@ -1,0 +1,4 @@
+tensorflow==1.15.2
+deeppavlov~=0.14.0
+flask~=2.0.1
+SQLAlchemy~=1.4.19

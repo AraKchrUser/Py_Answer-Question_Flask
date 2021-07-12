@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{style_path}}"/>
+    <title>Вопрос-ответ</title>
+</head>
+<body>
+<h3 align="center">Нейронная сеть готова ответить на Ваш вопрос по тексту, {{user_name}}</h3>
+<div>
+    <form class="login_form" method="post">
+        <div class="form-group">
+            <label for="text">Введите текст</label>
+            <textarea class="form-control" id="text" rows="3" name="text">{{text}}</textarea>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="acceptRules" name="accept">
+            <label class="form-check-label" for="acceptRules">Обработать текст</label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="text">Введите вопрос</label>
+            <textarea class="form-control" id="question" rows="1" name="question"
+                      placeholder="Введите вопрос">{{question}}</textarea>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="text">Ответ на вопрос</label>
+            <textarea class="form-control" id="answer" rows="1" name="answer"
+                      placeholder="Ответ на вопрос">{{answer}}</textarea>
+        </div>
+        <br>
+        <button style="background-color:#FFE4C4; color:#000000" type="submit" class="btn btn-primary"
+                name="btn_submit">Получить ответ</button>
+    </form>
+</div>
+</body>
+</html>
